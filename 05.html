@@ -9,4 +9,21 @@
     */
 
 
+    const texto = 'O rato roeu a roupa do rei de Roma';
+    const vogais = 'aeiouAEIOU';
+
+
+    let contador = 0;
+
+    for (let letra of texto) {
+
+        if (vogais.includes(letra)) {
+            contador ++;
+        }
+
+    }
+
+    
+    alert(`A quantidade de vogais achadas no texto foram: ${contador}.`);
+
 </script>

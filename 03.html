@@ -16,11 +16,20 @@ Calcule a média de temperaturas que estão no Array e apresente para o usuário
     temperaturas.push(temperaturaAnteontem);
     temperaturas.push(temperaturaOntem);
 
+    
+    let media = 0;
+    let soma = 0;
+    let mediaAplicada = 0;
 
     for (let temperatura of temperaturas) {
 
-        
+        soma += temperatura;
+        media = temperaturas.length;
+        mediaAplicada = soma / media;
 
     }
+
+
+    alert(`A média de temperaturas foram: ${mediaAplicada.toFixed(1)}°C.`);
 
 </script>
